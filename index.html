@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="BDC Academy: Visualizing data with D3.js" />
+  <title>BDC Academy: Visualizing data with D3.js</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script defer src="js/utils.js"></script>
+  <script defer src="js/index.js"></script>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root">
+    <!-- 
+      voordat we beginnen met d3 programma theorie over wat is D3.js
+
+      D3.js stands for Data Driven Documents (toon website). 
+      It's a JavaScript library for creating dynamic and interactive data visualizations in the browser.
+      D3 is built to work with common web standards – namely HTML, CSS, and Scalable Vector Graphics (SVG).
+
+      D3 supports many different kinds of input data formats. 
+      Then, using its powerful built-in methods, you can transform those data into different charts, graphs, and maps.
+      Or you can use the separate math and utility functions to calculate your manipulate the DOM yourself, for example with React.js.
+
+      its a good idea to read to intruduction page of D3.js to understand what it's about: https://d3js.org/ 
+
+      gemaakt door blabla in 20?? en populairder dan ooit
+      De maker is er zelfs verder op aant het bouwen door een abstractielaag erboven op te bouwen genaam observableHQ
+
+  
+      Je moet de d3 library dus in zijn geheel of gedeeltelijk including als script in je webapplicatie
+      We doen het nu even in zijn geheel via een script tag.
+      nodig om library als script binnen te halen.
+
+
+      Beginnen met een voorbeeld stuk code tonen waarbij je de syntax van D3.js onder ogen krijgt:
+      - selecting
+       - elements / attributes
+      - append
+      - data
+      - enter / update / exit
+      - chaining
+
+      Dan de eerste opdrachtjes om weer wat figuren te maken maar dan met D3.js
+      en als laatste weer een simpel grafiekje met de ingebouwde functies, net als de laatste svg opdracht
+      https://www.freecodecamp.org/learn/data-visualization/#data-visualization-with-d3
+
+
+      Waar we uiteindelijk heen gaan met alle D3.js opdrachten:
+      - leren hoe je alle onderdelen van een grafiek zelf met D3.js bouwt
+        - margin container
+        - labels
+        - axis
+        - scales
+        - lines
+        - bars
+        - circles
+        - area's
+        - legends
+        - tooltips
+        - zooming and panning
+        - animation
+        - stacking
+        - grouping
+        - data, datapoints en series
+        - zero line and negative axis
+        - D3 math functies
+        - Dynamicly get data with D3
+      - leren hoe je grafieken en onderdelen update aan de hand van nieuwe data die binnen komt
+        - met enter / update / delete
+      - Verschillende grafieken van de chartguide bouwen
+        - Op basis van datasets en requirements bepalen welke grafiek we moeten gebruiken en bouwen voor een dataset
+        - grafieken bouwen die met verschillende datasets te gebruiken zijn (data transformers)
+      - toewerken naar het bouwen van een minidashboard (eindresultaat tonen aan het begin van de D3 opdrachten)
+     -->
+  </div>
+  <button id="changeBubblesColor" onClick="handleChangeBubblesColor(event)">Change bubbles color</button>
+</body>
+
+</html>
