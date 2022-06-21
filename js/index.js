@@ -85,18 +85,17 @@ function createBubbles() {
   // TODO: 4.1 use d3.select function to get the bubbles svg element/selection
   const svgSelection = d3.select('#bubbles');
 
-  // TODO: 4.2 use a for loop to create an number of bubbles (50)
-  // and add a bubble for each iteration with a random bubble size from radius array
+  // A for loop to create a number of bubbles (50) with random radius and position
   for (let i = 0; i < 50; i++) {
     // Calculate random radius and position
     const r = radius[Math.floor(Math.random() * radius.length)];
     const cx = coordinates[Math.floor(Math.random() * coordinates.length)];
     const cy = coordinates[Math.floor(Math.random() * coordinates.length)];
 
-    // TODO: 4.3 append a bubble to the svg selection
-    // and set the x, y and r attributes along with the class, stroke, stroke-width and fill.
+    // TODO: 4.2 append a bubble to the svg selection
     const bubble = svgSelection.append('circle');
 
+   // TODO: 4.3 set the bubble x, y and r attributes along with the class, stroke, stroke-width and fill.
     bubble
       .attr('class', 'bubble')
       .attr('stroke', 'blue')
