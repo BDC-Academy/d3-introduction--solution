@@ -151,7 +151,6 @@ function handleSortBubbles() {
   // Use a value function to:
   // - move all the blue bubbles to the top left corner of the svg, by setting cx and cy to 20
   // - move all the red bubbles to the top right corner of the svg, by setting cx 380 and cy to 20
-  // - move all the green bubbles to the center of the svg
   // D3 has set the current html element to the 'this' inside the value function,
   // so you can get the stroke color of the current circle with the this.getAttribute function.
   // circles
@@ -247,12 +246,12 @@ function addBubbleClickEventListeners() {
   const circles = svgSelection.selectAll('circle');
 
   // TODO: 8.3 Use the 'on' function on the circles selection to add a 'click' event listener to all the circles.
-  // When a circle is clicked, use the attr function to set the stroke of the circle to green.
-  // Note: you can use d3.select on event.target or on 'this' to select the clicked circle element.
+  // You can use d3.select on event.target or on 'this' to select the clicked circle element.
+  // When a circle is clicked, use the .remove function on the circle selection to remove the circle from the DOM.
   circles.on('click', function (event) {
     const circleSelection = d3.select(event.target);
 
-    circleSelection.attr('stroke', 'green');
+    circleSelection.remove();
   });
 }
 
