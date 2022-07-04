@@ -1,4 +1,4 @@
-# SVG Introduction
+# D3.js Introduction
 
 ## Prerequisites
 
