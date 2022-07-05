@@ -60,3 +60,4 @@ Approx. 75 min
 - [https://d3js.org/](https://d3js.org/)
 - [https://www.freecodecamp.org/news/d3js-tutorial-data-visualization-for-beginners/#getting-started](https://www.freecodecamp.org/news/d3js-tutorial-data-visualization-for-beginners/#getting-started)
 - [https://website.education.wisc.edu/~swu28/d3t/](https://website.education.wisc.edu/~swu28/d3t/)
+- [https://github.com/d3/d3-selection/blob/v3.0.0/README.md](https://github.com/d3/d3-selection/blob/v3.0.0/README.md)
