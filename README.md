@@ -62,3 +62,4 @@ Approx. 75 min
 - [http://recursion.org/d3-for-mere-mortals](http://recursion.org/d3-for-mere-mortals)
 - [https://website.education.wisc.edu/~swu28/d3t/](https://website.education.wisc.edu/~swu28/d3t/)
 - [https://github.com/d3/d3-selection/blob/v3.0.0/README.md](https://github.com/d3/d3-selection/blob/v3.0.0/README.md)
+- [https://www.tutorialsteacher.com/d3js/select-dom-element-using-d3js](https://www.tutorialsteacher.com/d3js/select-dom-element-using-d3js)
