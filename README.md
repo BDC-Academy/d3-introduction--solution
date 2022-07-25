@@ -33,7 +33,7 @@ Learning to manipulate the DOM and SVG with D3 and getting a feeling with its ba
 
 ## Description
 
-D3.js is a JavaScript library that can be used to manipulate the DOM in a data driven way. D# enables you to &#39;bind&#39; data to the Document Object Model (DOM) and update the DOM based on changes in the data.
+D3.js is a JavaScript library that can be used to manipulate the DOM in a data driven way. D3 enables you to &#39;bind&#39; data to the Document Object Model (DOM) and update the DOM based on changes in the data.
 
 D3 provides and uses selections, dynamic properties, transformations, a chaining syntax and whole lot of utility functions to enable you to create fast and powerfull visualizations.
 
@@ -59,6 +59,7 @@ Approx. 75 min
 
 - [https://d3js.org/](https://d3js.org/)
 - [https://www.freecodecamp.org/news/d3js-tutorial-data-visualization-for-beginners/#getting-started](https://www.freecodecamp.org/news/d3js-tutorial-data-visualization-for-beginners/#getting-started)
+- [https://observablehq.com/collection/@thetylerwolf/25-days-of-d3](https://observablehq.com/collection/@thetylerwolf/25-days-of-d3)
 - [http://recursion.org/d3-for-mere-mortals](http://recursion.org/d3-for-mere-mortals)
 - [https://website.education.wisc.edu/~swu28/d3t/](https://website.education.wisc.edu/~swu28/d3t/)
 - [https://github.com/d3/d3-selection/blob/v3.0.0/README.md](https://github.com/d3/d3-selection/blob/v3.0.0/README.md)
