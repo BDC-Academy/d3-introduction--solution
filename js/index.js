@@ -126,11 +126,11 @@ function handleChangeBubblesColor(_event) {
   circles.attr('stroke', 'red');
 
   // D3 function calls on a selection like .attr can also receive a callback function instead of a fixed value.
-  // The function is used to calculate the correct value for the current item in the selection and must return the calculated value. 
-  // We call will call this a 'value function'.
-  // The value function will receive a dataitem as a first parameter (ignore/skip this one for now) and the current index as a second parameter from D3.
+  // The function is used to calculate the correct value for the current item in the selection and must return the calculated value.
+  // We call this an 'accessor function'.
+  // The accessor function will receive a dataitem as a first parameter (ignore/skip this one for now) and the current index as a second parameter from D3.
   // TODO: 5.4 Instead of making all the circles red, only make every second circle red.
-  // Note: use the index parameter in the value function.
+  // Note: use the index parameter in the accessor function.
   circles.attr('stroke', function (_dataitem, index) {
     return index % 2 ? 'red' : 'blue';
   });
@@ -148,10 +148,10 @@ function handleSortBubbles() {
   const circles = svgSelection.selectAll('circle');
 
   // TODO: 6.3 use the attr function on the circles selection to set the cx and cy attributes of each circle.
-  // Use a value function to:
+  // Use a accessor function to:
   // - move all the blue bubbles to the top left corner of the svg, by setting cx and cy to 20
   // - move all the red bubbles to the top right corner of the svg, by setting cx 380 and cy to 20
-  // D3 has set the current html element to the 'this' inside the value function,
+  // D3 has set the current html element to the 'this' inside the accessor function,
   // so you can get the stroke color of the current circle with the this.getAttribute function.
   // circles
   //   .attr('cx', function (_dataitem, _index) {
@@ -178,10 +178,10 @@ function handleSortBubbles() {
   //   });
 
   // TODO Extra: instead of moving the circles to fixed positions, put them in a single row next eachother.
-  // The bubbles will probably run outside the svg bounds, you can decrease the number of bubbles in the for loop 
-  // or try and create multiple rows but don't worry about that now ;) 
+  // The bubbles will probably run outside the svg bounds, you can decrease the number of bubbles in the for loop
+  // or try and create multiple rows but don't worry about that now ;)
   // Note: getAttribute always returns a string
-  // Note: The value function provides a third parameter 'nodes' that is a nodelist containing all the html elements in the selection. 
+  // Note: The accessor function provides a third parameter 'nodes' that is a nodelist containing all the html elements in the selection. 
   //       These nodes could be used to position the bubbles exactly next to eachother
   circles
     .attr('cy', function (_dataitem, index) {
